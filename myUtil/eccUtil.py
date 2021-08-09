@@ -1,5 +1,5 @@
 # ecc related defines
-# test
+# test2
 class EccPoint():
     def __init__(self,x=None,y=None,inf=False):
         self.x = x

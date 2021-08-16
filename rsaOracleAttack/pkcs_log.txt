@@ -1,0 +1,174 @@
+nkey = 0x9f7bc01c127e2f01
+ekey = 0x10001
+dkey = 0x75a4fbd88dc9e801
+ct = 0x94bc46729ff6a231
+pt = 843327371309940
+
+----------------------------------------
+step-1:blinding
+after [1] steps, ct0 found
+s0 = 0x1
+MList = [[0002000000000000,0002ffffffffffff]<-
+]
+
+----------------------------------------
+adaptive chosen ciphertext attack
+===[i=1]==
+narrowing wirh si=0x3be26
+[narrowing] rmin=13, rmax=19, a=562949953421312, b=844424930131967
+length of MList is 6
+MList = [[000229f23eec1e4b,000229f283522823]xx
+[0002548eaf64bca6,0002548ef3cac67e]xx
+[00027f2b1fdd5b00,00027f2b644364d8]xx
+[0002a9c79055f95b,0002a9c7d4bc0333]xx
+[0002d46400ce97b5,0002d4644534a18d]xx
+[0002ff0071473610,0002ff00b5ad3fe8]<-
+]
+===[i=2]==
+narrowing wirh si=0x3f361
+[narrowing] rmin=14, rmax=14, a=609070367907403, b=609071515445283
+[narrowing] rmin=15, rmax=15, a=655921758125222, b=655922905663102
+[narrowing] rmin=16, rmax=16, a=702773148343040, b=702774295880920
+[narrowing] rmin=17, rmax=17, a=749624538560859, b=749625686098739
+[narrowing] rmin=18, rmax=18, a=796475928778677, b=796477076316557
+[narrowing] rmin=19, rmax=20, a=843327318996496, b=843328466534376
+length of MList is 1
+MList = [[0002ff0071473610,0002ff00aae081b8]<-
+]
+===[i=3]==
+narrowing wirh si=0x92623
+[narrowing] rmin=44, rmax=45, a=843327318996496, b=843328285344184
+length of MList is 1
+MList = [[0002ff00744730c0,0002ff0090426661]<-
+]
+===[i=4]==
+narrowing wirh si=0x142b58
+[narrowing] rmin=97, rmax=98, a=843327369326784, b=843327838774881
+length of MList is 1
+MList = [[0002ff00744730c0,0002ff0080a48eaa]<-
+]
+===[i=5]==
+narrowing wirh si=0x2a35c2
+[narrowing] rmin=203, rmax=204, a=843327369326784, b=843327576772266
+length of MList is 1
+MList = [[0002ff00744730c0,0002ff0079df8037]<-
+]
+===[i=6]==
+narrowing wirh si=0x56155b
+[narrowing] rmin=414, rmax=415, a=843327369326784, b=843327463194679
+length of MList is 1
+MList = [[0002ff00744730c0,0002ff00770d4be5]<-
+]
+===[i=7]==
+narrowing wirh si=0xad9f52
+[narrowing] rmin=835, rmax=836, a=843327369326784, b=843327415864293
+length of MList is 1
+MList = [[0002ff0074606368,0002ff0075d9d9ea]<-
+]
+===[i=8]==
+narrowing wirh si=0x15d1db6
+[narrowing] rmin=1679, rmax=1680, a=843327370978152, b=843327395715562
+length of MList is 1
+MList = [[0002ff0074606368,0002ff0075171fda]<-
+]
+===[i=9]==
+narrowing wirh si=0x2bbe543
+[narrowing] rmin=3366, rmax=3367, a=843327370978152, b=843327382953946
+length of MList is 1
+MList = [[0002ff00746391fe,0002ff0074c13504]<-
+]
+===[i=10]==
+narrowing wirh si=0x579a998
+[narrowing] rmin=6741, rmax=6742, a=843327371186686, b=843327377323268
+length of MList is 1
+MList = [[0002ff00746391fe,0002ff00749114a4]<-
+]
+===[i=11]==
+narrowing wirh si=0xaf4fd07
+[narrowing] rmin=13490, rmax=13491, a=843327371186686, b=843327374169252
+length of MList is 1
+MList = [[0002ff0074645bad,0002ff00747bb8e1]<-
+]
+===[i=12]==
+narrowing wirh si=0x15eba3e5
+[narrowing] rmin=26988, rmax=26989, a=843327371238317, b=843327372769505
+length of MList is 1
+MList = [[0002ff0074655fb8,0002ff0074710d6e]<-
+]
+===[i=13]==
+narrowing wirh si=0x2bd926dc
+[narrowing] rmin=53985, rmax=53986, a=843327371304888, b=843327372070254
+length of MList is 1
+MList = [[0002ff0074655fb8,0002ff00746b0e6e]<-
+]
+===[i=14]==
+narrowing wirh si=0x57b42cca
+[narrowing] rmin=107979, rmax=107980, a=843327371304888, b=843327371677294
+length of MList is 1
+MList = [[0002ff0074655fb8,0002ff0074680f1f]<-
+]
+===[i=15]==
+narrowing wirh si=0xaf69ce30
+[narrowing] rmin=215965, rmax=215966, a=843327371304888, b=843327371480863
+length of MList is 1
+MList = [[0002ff0074656ed5,0002ff007466e46f]<-
+]
+===[i=16]==
+narrowing wirh si=0x15ed57b72
+[narrowing] rmin=431939, rmax=431940, a=843327371308757, b=843327371404399
+length of MList is 1
+MList = [[0002ff0074656ed5,0002ff00746624a4]<-
+]
+===[i=17]==
+narrowing wirh si=0x2bdaca0bb
+[narrowing] rmin=863886, rmax=863887, a=843327371308757, b=843327371355300
+length of MList is 1
+MList = [[0002ff00746571f7,0002ff007465cf5c]<-
+]
+===[i=18]==
+narrowing wirh si=0x57b5b2088
+[narrowing] rmin=1727781, rmax=1727782, a=843327371309559, b=843327371333468
+length of MList is 1
+MList = [[0002ff00746571f7,0002ff0074659f6a]<-
+]
+===[i=19]==
+narrowing wirh si=0xaf6b7eae7
+[narrowing] rmin=3455570, rmax=3455571, a=843327371309559, b=843327371321194
+length of MList is 1
+MList = [[0002ff00746572c0,0002ff0074658a18]<-
+]
+===[i=20]==
+narrowing wirh si=0x15ed71b4e0
+[narrowing] rmin=6911149, rmax=6911150, a=843327371309760, b=843327371315736
+length of MList is 1
+MList = [[0002ff00746572c0,0002ff0074657e1c]<-
+]
+===[i=21]==
+narrowing wirh si=0x2bdae51397
+[narrowing] rmin=13822306, rmax=13822307, a=843327371309760, b=843327371312668
+length of MList is 1
+MList = [[0002ff00746572f2,0002ff00746578c7]<-
+]
+===[i=22]==
+narrowing wirh si=0x57b5cbd105
+[narrowing] rmin=27644620, rmax=27644621, a=843327371309810, b=843327371311303
+length of MList is 1
+MList = [[0002ff0074657333,0002ff007465761d]<-
+]
+===[i=23]==
+narrowing wirh si=0xaf6b994be1
+[narrowing] rmin=55289248, rmax=55289249, a=843327371309875, b=843327371310621
+length of MList is 1
+MList = [[0002ff0074657353,0002ff00746574c8]<-
+]
+===[i=24]==
+narrowing wirh si=0x15ed7344199
+[narrowing] rmin=110578504, rmax=110578505, a=843327371309907, b=843327371310280
+length of MList is 1
+MList = [[0002ff0074657364,0002ff007465741d]<-
+]
+===[i=25]==
+
+----------------------------------------
+step 4
+rslt: b'\x00\x02\xff\x00test'

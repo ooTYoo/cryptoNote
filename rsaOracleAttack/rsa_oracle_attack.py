@@ -2,7 +2,7 @@ from rsaOracle import rsaOracleServer,mod_exp
 import math
 from bnUtil import mod_exp,mod_inv_gcd
 
-server = rsaOracleServer(64)
+server = rsaOracleServer(256)
 server.pf_keys()
 ct1 = server.give_me_a_ct()
 nkey,ekey = server.give_me_pk()
@@ -87,16 +87,17 @@ def order_sets_add(sets,new):
     mid = new
     for k in range(len(sets)):
         ak,bk = sets[k]
-        if mid[0] > bk:
+        if mid[0] > bk + 1:
             left_index = k+1
             right_index = k+1
             continue
-        elif mid[1] < ak:
+        elif mid[1] < ak-1:
             right_index = k
             break
         else:
             mid[0] = min(mid[0],ak)
             mid[1] = max(mid[1],bk)
+            right_index = k + 1
     return sets[0:left_index] + [mid] + sets[right_index:]
 
 def doc_m_list(m_list,pt):
@@ -141,7 +142,7 @@ def crack_bleichenbache_oracle(ct,logs):
         logs.write("===[i=%d]==" % i +"\n")
         print("step ",i)
         if i == 1:
-            s_beg = math.ceil(nkey/B3)
+            s_beg = ceil(nkey,B3)
             si,cti,cnt = pkcs_oracle_searching(ct0,s_beg)
             cost += cnt
             s_lyst.append(si)
@@ -182,8 +183,8 @@ def crack_bleichenbache_oracle(ct,logs):
         si = s_lyst[-1]
         logs.write("narrowing wirh si="+hex(si) + "\n")
         for a,b in m_lyst:
-            rmin = math.ceil((a*si-3*B+1)/nkey)
-            rmax = math.ceil((b*si-B2)/nkey)
+            rmin = ceil((a*si-3*B+1),nkey)
+            rmax = ceil((b*si-B2),nkey)
             logs.write(f"[narrowing] rmin={rmin}, rmax={rmax}, a={a}, b={b}" + "\n")
             print("rmax - rmin = %d"%(rmax-rmin))
             for r in range(rmin, rmax+1):
@@ -202,7 +203,9 @@ def crack_bleichenbache_oracle(ct,logs):
         s0inv = mod_inv_gcd(s0,nkey)
         rslt = (rslt * s0inv) % nkey
     logs.write("rslt: "+str(rslt.to_bytes(server.bitlen // 8, 'big'))+"\n")
+    print("using [%d] choosen ciphertext"%cost)
     print(rslt.to_bytes(server.bitlen // 8, 'big'))
+
 
 if __name__ == "__main__":
     #crack_parity_oracle(ct1)

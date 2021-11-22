@@ -7,6 +7,7 @@ def gcd(a,b):
         return gcd(b,a%b)
 
 def extendGcd(a,b):
+    # a*x + b*y = d
     if a < b:
         d,x1,y1 = extendGcd(b,a)
         return (d,y1,x1)
